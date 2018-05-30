@@ -173,6 +173,16 @@ $aModule = array(
             'template' => 'widget/minibasket/minibasket.tpl',
             'block' => 'dd_layout_page_header_icon_menu_minibasket_functions',
             'file' => 'application/blocks/bestitamazonpay4oxid_minibasket_functions.tpl'
+        ),
+        array(
+            'template' => 'layout/base.tpl',
+            'block' => 'head_css',
+            'file' => 'application/blocks/bestitamazonpay4oxid_head_css.tpl'
+        ),
+        array(
+            'template' => 'module_config.tpl',
+            'block' => 'admin_module_config_var_type_str',
+            'file' => 'application/blocks/bestitamazonpay4oxid_module_config_var_str.tpl'
         )
     ),
     'templates' => array(
@@ -376,6 +386,13 @@ $aModule = array(
             'type' => 'bool',
             'value' => 'false',
             'position' => '8'
+        ),
+        array(
+            'group' => 'bestitAmazonPay4OxidConfiguration',
+            'name' => 'sBestitAmazonPay4OxidCustomButtonCss',
+            'type' => 'str',
+            'value' => '',
+            'position' => '999' # Show always as last entry
         )
     ),
     'events' => array(
